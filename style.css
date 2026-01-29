@@ -6,17 +6,38 @@
 }
 
 body {
-    font-family: 'Inter', -apple-system, sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     line-height: 1.6;
-    color: #1a1a1a;
-    background-color: #ffffff;
+    /* DARK MODE COLORS */
+    background-color: #111111; 
+    color: #e0e0e0;
     padding: 0 20px;
 }
 
 /* LAYOUT UTILITY */
 .container {
-    max-width: 720px; /* Academic standard: narrow width for better reading */
-    margin: 60px auto;
+    max-width: 720px;
+    margin: 40px auto;
+    position: relative; /* Needed to position the icons relative to this box */
+}
+
+/* TOP RIGHT ICONS */
+.top-social {
+    display: flex;
+    justify-content: flex-end; /* Pushes items to the right */
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.icon-link svg {
+    width: 24px;
+    height: 24px;
+    fill: #888; /* Grey by default */
+    transition: fill 0.2s;
+}
+
+.icon-link:hover svg {
+    fill: #fff; /* White on hover */
 }
 
 /* TYPOGRAPHY */
@@ -24,6 +45,7 @@ h1 {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 10px;
+    color: #ffffff;
     letter-spacing: -0.02em;
 }
 
@@ -31,23 +53,26 @@ h2.section-title {
     font-size: 1.5rem;
     margin-top: 60px;
     margin-bottom: 25px;
-    border-bottom: 2px solid #f0f0f0;
+    border-bottom: 1px solid #333; /* Darker border */
     padding-bottom: 10px;
+    color: #ffffff;
 }
 
 h3 {
     font-size: 1.1rem;
     font-weight: 600;
     margin-bottom: 5px;
+    color: #fff;
 }
 
 p {
     margin-bottom: 15px;
-    color: #444;
+    color: #bbbbbb; /* Slightly dimmer text for hierarchy */
 }
 
+/* LINKS */
 a {
-    color: #0056b3;
+    color: #66b3ff; /* Soft blue for dark mode */
     text-decoration: none;
 }
 
@@ -71,29 +96,30 @@ a:hover {
 }
 
 .btn-primary {
-    background-color: #111;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .btn-primary:hover {
-    background-color: #333;
+    background-color: #cccccc;
     text-decoration: none;
 }
 
 .btn-secondary {
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #444;
 }
 
 .btn-secondary:hover {
-    background-color: #e0e0e0;
+    background-color: #444444;
     text-decoration: none;
 }
 
-/* PROJECTS & CARDS */
+/* PROJECTS & CARDS (Dark Card Style) */
 .project-card {
-    background: #fff;
-    border: 1px solid #e5e5e5;
+    background: #1c1c1c; /* Slightly lighter than background */
+    border: 1px solid #333;
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
@@ -101,7 +127,7 @@ a:hover {
 }
 
 .project-card:hover {
-    border-color: #ccc;
+    border-color: #555;
     transform: translateY(-2px);
 }
 
@@ -115,11 +141,12 @@ a:hover {
 
 .tech-tag {
     font-size: 0.75rem;
-    background: #f4f4f5;
-    color: #555;
+    background: #333;
+    color: #eee;
     padding: 2px 8px;
     border-radius: 4px;
     font-family: monospace;
+    border: 1px solid #444;
 }
 
 .link-arrow {
@@ -144,14 +171,8 @@ a:hover {
 footer {
     margin-top: 80px;
     padding-top: 20px;
-    border-top: 1px solid #f0f0f0;
-    display: flex;
-    justify-content: space-between;
+    border-top: 1px solid #333;
     font-size: 0.9rem;
     color: #666;
-}
-
-.social-links a {
-    margin-left: 15px;
-    color: #666;
+    text-align: center;
 }
