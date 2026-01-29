@@ -1,1 +1,157 @@
+/* GLOBAL RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background-color: #ffffff;
+    padding: 0 20px;
+}
+
+/* LAYOUT UTILITY */
+.container {
+    max-width: 720px; /* Academic standard: narrow width for better reading */
+    margin: 60px auto;
+}
+
+/* TYPOGRAPHY */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: -0.02em;
+}
+
+h2.section-title {
+    font-size: 1.5rem;
+    margin-top: 60px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+p {
+    margin-bottom: 15px;
+    color: #444;
+}
+
+a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* BUTTONS */
+.cta-group {
+    margin-top: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: background 0.2s;
+}
+
+.btn-primary {
+    background-color: #111;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #333;
+    text-decoration: none;
+}
+
+.btn-secondary {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.btn-secondary:hover {
+    background-color: #e0e0e0;
+    text-decoration: none;
+}
+
+/* PROJECTS & CARDS */
+.project-card {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+    border-color: #ccc;
+    transform: translateY(-2px);
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.tech-tag {
+    font-size: 0.75rem;
+    background: #f4f4f5;
+    color: #555;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+.link-arrow {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* GRID FOR INTERESTS */
+.grid-2-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 600px) {
+    .grid-2-col {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* FOOTER */
+footer {
+    margin-top: 80px;
+    padding-top: 20px;
+    border-top: 1px solid #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.social-links a {
+    margin-left: 15px;
+    color: #666;
+}
