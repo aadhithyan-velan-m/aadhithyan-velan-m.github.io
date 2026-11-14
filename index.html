@@ -3,104 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Academic Portfolio of [Your Name]">
-    
-    <title>Aadhithyan Velan M</title>
-    
+    <title>Aadhithyan Velan M · Reinforcement learning</title>
+    <meta name="description" content="Aadhithyan Velan M: reinforcement learning researcher working on multi-agent RL and agents that generalize across environments. Applying to PhD programs for 2027.">
+
+    <!-- Link previews when you paste this URL into an email or Slack -->
+    <meta property="og:title" content="Your Name">
+    <meta property="og:description" content="Reinforcement learning: multi-agent RL and agents that generalize across environments.">
+    <meta property="og:type" content="website">
+
+    <!-- Small chessboard favicon (no file needed) -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4'%3E%3Crect width='4' height='4' fill='%23e3eee8'/%3E%3Cpath d='M0 0h1v1H0zM2 0h1v1H2zM1 1h1v1H1zM3 1h1v1H3zM0 2h1v1H0zM2 2h1v1H2zM1 3h1v1H1zM3 3h1v1H3z' fill='%232c6a4c'/%3E%3C/svg%3E">
+
     <link rel="stylesheet" href="style.css">
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <div class="container">
+<main class="page">
 
-        <header class="hero">
-            <h1>Aadhithyan Velan M</h1>
-            
-            <p class="tagline">Undergraduate Computer Science Student</p>
-            <p class="bio">
-                I am interested in <strong>reinforcement learning</strong>.<br>
-                Currently working on my undergraduate thesis in the field of Multi-Agent Reinforcement Learning at NTU Singapore, under the guidance of Prof. Stefano V. Albrecht.<br>
-                Contact me here: aadhi.email@gmail.com
+    <!-- ============ INTRO ============ -->
+    <header class="intro">
+        <div class="intro-top">
+            <div>
+                <h1 class="name">Your Name</h1>
+                <p class="role">
+                    Computer science undergraduate, BITS Pilani (Hyderabad)<br>
+                    Visiting researcher, NTU Singapore, with
+                    <a href="https://agents-lab.org/">Prof. Stefano V. Albrecht</a>
+                </p>
+            </div>
+            <!-- Optional photo: add assets/photo.jpg (square, ~400px) and uncomment.
+            <img class="portrait" src="assets/photo.jpg" alt="Your Name" width="120" height="120">
+            -->
+        </div>
+
+        <p class="statement">
+            Trial and error is the heart of the process of understanding the world around us, and Reinforcement Learning (RL) 
+            is this philosophy put into effect. I'm currently working on my undergraduate thesis in the field of Multi-Agent RL (MARL), under the 
+            guidance of Prof. Stefano V. Albrecht. I enjoy watching my agents slowly get better at their assigned tasks. To this end, my latest project, DiepJAX,
+            is a testbed for me to further explore what it means to create an agent that learns. The ultimate goal for me would be to create a 
+            generalized learning agent, i.e., one that can play Doom and know how to play Halo as a result. 
+            Making J.A.R.V.I.S along the way would be a nice touch :P
+        </p>
+
+        <p class="status">I'm applying to PhD programs starting in 2027.</p>
+
+        <nav class="links" aria-label="Contact and profiles">
+            <a class="cv" href="assets/resume.pdf">CV (PDF)</a>
+            <a href="mailto:you@example.com">Email</a>
+            <a href="https://github.com/your-username">GitHub</a>
+            <a href="https://knightmareprotocol.hashnode.dev/">Blog</a>
+            <a href="https://linkedin.com/in/your-username">LinkedIn</a>
+        </nav>
+    </header>
+
+    <!-- ============ NEWS (newest first; keep to 3–5 items) ============ -->
+    <section class="block" aria-labelledby="news-h">
+        <h2 id="news-h">News</h2>
+        <ol class="news">
+            <li>
+                <time datetime="2026-10">Oct 2026</time>
+                <span>Started DiepJAX, a fast multi-agent RL environment in JAX.</span>
+            </li>
+            <li>
+                <time datetime="2026-07">Jul 2026</time>
+                <span>Joined Prof. Stefano V. Albrecht's group at NTU Singapore for my undergraduate thesis.</span>
+            </li>
+            <li>
+                <time datetime="2026-02">Feb 2026</time>
+                <span>Wrapped up Knightmare Protocol, my chess agent, now playing live on Lichess.</span>
+            </li>
+        </ol>
+    </section>
+
+    <!-- ============ RESEARCH ============ -->
+    <section class="block" aria-labelledby="research-h">
+        <h2 id="research-h">Research</h2>
+
+        <article class="entry">
+            <div class="entry-head">
+                <h3>Fairness in multi-agent reinforcement learning</h3>
+                <p class="when">Jul 2026 – present</p>
+            </div>
+            <p class="where">Undergraduate thesis · NTU Singapore, advised by Prof. Stefano V. Albrecht</p>
+            <p>
+                How can decentralized agents learn policies that are both efficient and fair,
+                with no central coordinator? I'm studying this in sequential social dilemmas,
+                designing a new decentralized learning algorithm and developing its convergence analysis.
             </p>
-            
-            <div class="cta-group">
-                <a href="assets/resume.pdf" class="btn btn-primary" target="_blank">Download CV</a>
-                <a href="https://knightmareprotocol.hashnode.dev/" class="btn btn-primary">View Blog</a>
-                <a href="https://github.com/GallantGargoyle" class="btn btn-secondary">GitHub</a>
-                <a href="https://linkedin.com/in/Aadhithyan-Velan-M" class="btn btn-secondary">LinkedIn</a>
+        </article>
+
+        <article class="entry">
+            <div class="entry-head">
+                <h3>Latent-space adversarial attacks</h3>
+                <p class="when">Aug – Dec 2025</p>
             </div>
-            
-        </header>
+            <p class="where">Undergraduate researcher · BITS Pilani, advised by Prof. Aneesh Chivukula</p>
+            <p>
+                Reproduced and evaluated VAE-based adversarial attacks on CNNs, benchmarked them
+                on MNIST and GTSRB, and explored quantum-behaved particle swarm optimization as an
+                alternative way to search for attacks.
+            </p>
+        </article>
+    </section>
 
-        <section id="projects">
-            <h2 class="section-title">Selected Projects</h2>
-            
-            <article class="project-card">
-                <div class="project-header">
-                    <h3>Reinforcement Learning Chess Bot (Knightmare Protocol)</h3>
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">PyTorch</span>
-                </div>
-                <p>
-                    This project investigates reinforcement learning for chess with an emphasis on learning from expert demonstrations.<br>
-                    I began by implementing NFQ and DQN on a reduced 5×5 board to study learning dynamics and stability, then scaled to 
-                    full 8×8 chess using Double DQN and dueling architectures.<br> 
-                    A supervised baseline was trained on approximately 8 million master-level positions and deployed on Lichess, achieving ~1500 Blitz Elo. <br>
-                    Current work focuses on transferring supervised representations into reinforcement learning to improve sample 
-                    efficiency and playing strength.
-                </p>
-                <a href="https://lichess.org/@/KnightmareProtocol" class="link-arrow">View Chess Bot &rarr;</a><br>
-                <a href="https://knightmareprotocol.hashnode.dev/" class="link-arrow">View Blog &rarr;</a>
-            </article>
+    <!-- ============ PROJECTS ============ -->
+    <section class="block" aria-labelledby="projects-h">
+        <h2 id="projects-h">Projects</h2>
 
-            <article class="project-card">
-                <div class="project-header">
-                    <h3>Adversarial Robustness in Deep Learning</h3>
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">PyTorch</span>
-                </div>
-                <p>
-                    Worked as a student researcher under faculty supervision on adversarial robustness in deep learning models. <br> 
-                    The project involved using variational autoencoders to generate adversarial examples that fool convolutional 
-                    neural networks, and evaluating their impact on model performance. <br>
-                    I then explored adversarial training strategies to improve robustness against these learned perturbations. 
-                </p>
-            </article>
-
-            <article class="project-card">
-                <div class="project-header">
-                    <h3>BERT-CRF Model for Attribute-Value Extraction</h3>
-                </div>
-                <p>
-                Built an end-to-end system for attribute–value extraction from unstructured e-commerce product titles, framing the task as sequence labeling with IOB tags. <br>
-                Implemented a BERT–CRF architecture that combines contextualized representations from a pre-trained transformer with structured decoding via a conditional 
-                random field, enabling valid and consistent tag sequences. <br>
-                The system includes a full training pipeline and an interactive web application for real-time inference and demonstration.
-                </p>
-            </article>
-        </section>
-
-        <section id="education">
-            <h2 class="section-title">Education</h2>
-            <div class="edu-item">
-                <h3>Birla Institute of Technology and Science, Pilani (Hyderabad Campus)</h3>
-                <p class="date">Expected Graduation: May 2027</p>
-                <p>B.E. in Computer Science</p>
+        <article class="entry">
+            <!-- Optional: GIF of agents playing. Uncomment and add the file.
+            <figure class="entry-media">
+                <img src="assets/diepjax.gif" alt="Agents competing in DiepJAX" loading="lazy">
+            </figure>
+            -->
+            <div class="entry-head">
+                <h3>DiepJAX</h3>
+                <p class="when">Oct 2026 – present</p>
             </div>
-        </section>
+            <p class="lede">
+                A diep.io-inspired multi-agent environment in JAX: a fast, GPU-parallel testbed
+                for established and new MARL algorithms. I'm implementing the algorithms from
+                scratch as baselines for research on open-ended learning.
+            </p>
+            <!-- Add once public:
+            <p class="entry-links"><a href="https://github.com/your-username/diepjax">Code</a></p>
+            -->
+        </article>
 
-        <footer>
-            <p>&copy; 2025 Aadhithyan Velan M. Hosted on GitHub Pages.</p>
-            <div class="social-links">
-                <a href="https://github.com/GallantGargoyle">GitHub</a>
-                <a href="https://linkedin.com/in/aadhithyan-velan-m/">LinkedIn</a>
+        <article class="entry">
+            <!-- Optional: a short looping GIF of the bot playing.
+            <figure class="entry-media">
+                <img src="assets/knightmare.gif" alt="Knightmare Protocol playing a blitz game on Lichess" loading="lazy">
+            </figure>
+            -->
+            <div class="entry-head">
+                <h3>Knightmare Protocol</h3>
+                <p class="when">Jul 2025 – Feb 2026</p>
             </div>
-        </footer>
+            <p class="lede">
+                A chess agent trained by imitation learning on 8M+ expert positions, deployed
+                live on Lichess at about 1500 blitz Elo.
+            </p>
+            <ul class="details">
+                <li>Implemented NFQ, DQN, Double DQN and Dueling DQN from scratch, first on a 5×5 board, then full 8×8 chess.</li>
+                <li>Ran systematic experiments moving from offline supervised learning to online RL.</li>
+                <li>Designed a canonical board representation that removes perspective asymmetry and stabilises training.</li>
+            </ul>
+            <p class="entry-links">
+                <a href="https://lichess.org/@/KnightmareProtocol">Play the bot on Lichess</a>
+                <a href="https://knightmareprotocol.hashnode.dev/">Read the write-up</a>
+            </p>
+        </article>
 
-    </div> </body>
+        <article class="entry">
+            <div class="entry-head">
+                <h3>E-commerce attribute extraction</h3>
+                <p class="when">Aug – Dec 2025</p>
+            </div>
+            <p>
+                An end-to-end system that pulls product attributes out of messy e-commerce titles,
+                pairing a BERT encoder with a CRF so the predicted tag sequences stay valid.
+            </p>
+        </article>
+    </section>
 
+    <!-- ============ EDUCATION ============ -->
+    <section class="block" aria-labelledby="education-h">
+        <h2 id="education-h">Education</h2>
+        <article class="entry">
+            <div class="entry-head">
+                <h3>Birla Institute of Technology and Science, Pilani (Hyderabad)</h3>
+                <p class="when">2023 – 2027</p>
+            </div>
+            <p class="where">B.E. Computer Science, expected May 2027 · NTSE Scholar</p>
+        </article>
+    </section>
+
+    <!-- ============ OUTSIDE RESEARCH ============ -->
+    <section class="block" aria-labelledby="outside-h">
+        <h2 id="outside-h">Outside research</h2>
+        <p class="outside">
+            I'm revising a 50,000-word high-fantasy novel and building a 3D open-world RPG
+            in Godot, where most of my time goes into narrative systems.
+        </p>
+    </section>
+
+    <footer class="foot">
+        <p>&copy; 2026 Your Name</p>
+        <p>Last updated November 2026</p>
+    </footer>
+
+</main>
+</body>
 </html>
