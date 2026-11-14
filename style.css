@@ -110,8 +110,9 @@ a:focus-visible {
 }
 
 /* The one memorable thing on the page: your research question, set large. */
+.about { margin-top: 2.5rem; }
+
 .statement {
-    margin-top: 2rem;
     font-family: var(--serif);
     font-size: clamp(1.3rem, 3vw, 1.55rem);
     line-height: 1.45;
@@ -247,6 +248,59 @@ a:focus-visible {
     gap: 0.5rem;
     color: var(--muted);
     font-size: 0.9rem;
+}
+
+/* ======================= Laptops and desktops ======================= */
+/* Two columns: your name, status and links stay pinned on the left
+   while the reader scrolls through the work on the right. */
+@media screen and (min-width: 64rem) {
+    body { font-size: 1.125rem; }  /* 18px */
+
+    .page {
+        max-width: 78rem;
+        padding: 6rem 3rem 4rem;
+        display: grid;
+        grid-template-columns: minmax(16rem, 20rem) minmax(0, 46rem);
+        column-gap: clamp(3rem, 7vw, 7rem);
+        justify-content: center;
+        align-items: start;
+    }
+
+    .page > * { grid-column: 2; }
+
+    .intro {
+        grid-column: 1;
+        grid-row: 1 / span 30;   /* runs the full height of the right column */
+    }
+
+    .intro-top {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .about { margin-top: 0; }
+
+    .statement { font-size: 1.4rem; }
+
+    .status { margin-top: 1.5rem; }
+
+    .links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .block { margin-top: 4rem; }
+
+    .news li { grid-template-columns: 6.5rem 1fr; }
+}
+
+/* Pin the left column only when the screen is tall enough to show all of it. */
+@media screen and (min-width: 64rem) and (min-height: 40rem) {
+    .intro {
+        position: sticky;
+        top: 6rem;
+    }
 }
 
 /* ======================= Small screens ======================= */
