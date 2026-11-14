@@ -119,6 +119,10 @@ a:focus-visible {
     font-variation-settings: "opsz" 36;
 }
 
+.statement p {
+    margin-bottom: 1.2em;
+}
+
 .status {
     margin-top: 1.1rem;
     font-weight: 700;
